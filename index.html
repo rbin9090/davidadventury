@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Projeto voltado para jogadores que buscam explorar jogos, alcançar metas e se divertir com conteúdos sobre games e aventuras.">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>home_davidadventury</title>
+</head>
+
+<body>
+
+	<header>
+		<div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+		
+		<nav class="menu-desktop">
+			<ul>
+				<li><a href="home">Página Inicial</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="Blog">Blog</a></li>
+				<li><a href="Top Jogos">Jogos Adventury</a></li>
+			</ul>
+		</nav>
+
+		<nav class="menu-mobile" id="menuMobile">
+			<a href="home">Página Inicial</a>
+			<a href="Videos">Videos</a>
+			<a href="Blog">Blog</a>
+			<a href="Top Jogos">Jogos Adventury</a>
+		</nav>
+	</header>
+
+	<div class="container">
+		<section class="chamada">
+	<h1>Bem-vindo ao David Adventury!</h1>
+	<p>Explore conteúdos, vídeos e dicas para alcançar seus objetivos nos games mais desafiadores.</p>
+	<a href="Top Jogos" class="btn">Ver Jogos em Destaque</a>
+</section>
+
+	</div>
+
+	<script>
+		function toggleMenu() {
+			const menu = document.getElementById('menuMobile');
+			menu.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
